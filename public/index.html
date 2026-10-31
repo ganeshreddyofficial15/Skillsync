@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync | Student Team Matchmaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SkillSync 🚀</h1>
+            <p>Find your ideal hackathon and project teammates instantly.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Forms Section -->
+        <section class="forms-grid">
+            <div class="card">
+                <h2>Post a Project</h2>
+                <form id="project-form">
+                    <input type="text" id="p-title" placeholder="Project Title (e.g., AI Health Tracker)" required>
+                    <input type="text" id="p-event" placeholder="Event Name (e.g., Google Solution Challenge)" required>
+                    <input type="text" id="p-leader" placeholder="Your Name" required>
+                    <input type="text" id="p-skills" placeholder="Required Skills (Comma separated: React, Python)" required>
+                    <textarea id="p-desc" placeholder="Brief project description..." required></textarea>
+                    <button type="submit" class="btn">Publish Project</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Create Your Profile</h2>
+                <form id="user-form">
+                    <input type="text" id="u-name" placeholder="Full Name" required>
+                    <input type="text" id="u-skills" placeholder="Your Skills (e.g., Java, Node.js, UI/UX)" required>
+                    <textarea id="u-bio" placeholder="Short bio or links to GitHub/LinkedIn..." required></textarea>
+                    <button type="submit" class="btn secondary">Save Profile</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Feeds Section -->
+        <section class="feed-section">
+            <h2>Active Hackathon Teams Recruiting</h2>
+            <div id="projects-container" class="grid"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
